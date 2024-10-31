@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipKart - Premium Shopping Experience |ScriptingWithSaad</title>
+    
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Link CSS -->
+     <link rel="stylesheet" href="./stylesheet/style.css">
+
+     <!-- link favicon -->
+     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Modern Header with Glassmorphism -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="navbar-logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="./assets/images/flipkart-logo.png" alt="Flipkart" class="logo-image">
+                    </a>
+                </div>
+
+                <!-- Modern Navigation -->
+                <div class="nav-links">
+                    <a href="home.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <!--Search Bar -->
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="search" class="search-input" placeholder="Search for products, brands and more...">
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="account-btn">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section with Modern Slider -->
+        <section class="hero-section">
+            <div class="hero-slider">
+                <img src="./assets/images/slider-img-1.jpg" alt="Featured Products" class="hero-image">
+                <div class="hero-content">
+                    <h1 class="hero-title">Discover Premium Products</h1>
+                    <p class="hero-subtitle">Exclusive deals on trending items</p>
+                    <button class="cta-button">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="categories-section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Categories</h2>
+                <button class="view-all-btn">View All</button>
+            </div>
+
+            <div class="category-grid">
+                <!-- Electronics Category -->
+                <div class="category-card" data-category="electronics">
+                    <div class="card-content">
+                        <img src="./assets/images/monitor.png" alt="Electronics" class="category-image">
+                        <div class="category-details">
+                            <h3 class="category-title">Electronics</h3>
+                            <p class="category-discount">Up to 40% off</p>
+                            <span class="category-cta">Shop Now →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Laptop">
+                    <div class="card-content">
+                        <img src="./assets/images/Dell-inspiron.png" alt="Laptop" class="category-image">
+                        <div class="category-details">
+                            <h3 class="category-title">Laptop</h3>
+                            <p class="category-discount">Up to 25% off</p>
+                            <span class="category-cta">Shop Now →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Accessories">
+                    <div class="card-content">
+                        <img src="./assets/images/Airpods.png" alt="Accessories" class="category-image">
+                        <div class="category-details">
+                            <h3 class="category-title">Accessories</h3>
+                            <p class="category-discount">Up to 20% off</p>
+                            <span class="category-cta">Shop Now →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Kids">
+                    <div class="card-content">
+                        <img src="./assets/images/super-hero-models.png" alt="Kids" class="category-image">
+                        <div class="category-details">
+                            <h3 class="category-title">Kids</h3>
+                            <p class="category-discount">Up to 55% off</p>
+                            <span class="category-cta">Shop Now →</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Featured Products Grid -->
+        <section class="products-section">
+            <div class="section-header">
+                <h2 class="section-title">Trending Products</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Electronics</button>
+                    <button class="filter-btn">Laptops</button>
+                    <button class="filter-btn">Accessories</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Modern Product Cards -->
+                <article class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="./assets/images/Asus-vivobook.png" alt="Asus Vivobook">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Asus Vivobook</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.8 (150)
+                            </span>
+                            <span class="product-discount">-40%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹47,499</span>
+                            <span class="original-price">₹59,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/Apple-headphone.png" alt="Headphone">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Headphone</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                3.7 (215)
+                            </span>
+                            <span class="product-discount">-30%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹34,999</span>
+                            <span class="original-price">₹49,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/cycle.png" alt="Cycle">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Cycle</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.0 (178)
+                            </span>
+                            <span class="product-discount">-20%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹12,999</span>
+                            <span class="original-price">₹15,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="./assets/images/fairy.png" alt="Fairy">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Fairy</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.3 (305)
+                            </span>
+                            <span class="product-discount">-20%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹4,999</span>
+                            <span class="original-price">₹6,499</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/hp-intel.png" alt="Hp Intel">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Hp Intel</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.9 (500)
+                            </span>
+                            <span class="product-discount">-10%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹55,999</span>
+                            <span class="original-price">₹62,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/remote-control-car.png" alt="Toy Car">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Toy Car</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.1 (80)
+                            </span>
+                            <span class="product-discount">-60%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹2,499</span>
+                            <span class="original-price">₹4,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="./assets/images/smart-watch.png" alt="Smart Watch">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Smart Watch</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                3.9 (130)
+                            </span>
+                            <span class="product-discount">-20%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹5,999</span>
+                            <span class="original-price">₹7,499</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/beblade.png" alt="Beblade">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Beblade</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                3.8 (98)
+                            </span>
+                            <span class="product-discount">-30%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,499</span>
+                            <span class="original-price">₹2,199</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="./assets/images/monitor.png" alt="Monitor">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Monitor</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.6 (420)
+                            </span>
+                            <span class="product-discount">-80%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹11,999</span>
+                            <span class="original-price">₹15,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/gun.png" alt="Gun">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Gun</h3>
+                        <div class="product-meta">
+                            <span class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.2 (75)
+                            </span>
+                            <span class="product-discount">-10%</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹2,999</span>
+                            <span class="original-price">₹3,499</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+            
+                <!-- Add more product cards here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                    <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Customer Service</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Payment Methods</a></li>
+                    <li><a href="#" class="footer-link">Shipping Information</a></li>
+                    <li><a href="#" class="footer-link">Returns & Exchanges</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100029634032345" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/ScriptingWithSaad" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/scriptingwithsaad/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/scripting-with-saad" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 FlipKart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
